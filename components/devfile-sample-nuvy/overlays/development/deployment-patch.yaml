@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-nuvy
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/ci10t-777-0092-tenant/ci10t-777-0092-app/devfile-sample-nuvy@sha256:98dc0738f23bd26d4f8af73196f19434a06712decb84c0e1f2373b44edef4b96
+        name: my-nodejs
+        resources: {}
+status: {}
